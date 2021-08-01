@@ -1,1 +1,36 @@
-.bannerSlider
+.theBackground
+  position: absolute
+  margin: 0
+  top: 0
+  left: 0
+  z-index: -1
+  height: 100%
+  img
+    max-width: 100%
+    object-fit: cover
+.bannerCard
+  background-color: rgba(255, 255, 255, .5)
+  border-radius: 85px
+  aspect-ratio: 1
+  display: flex
+  flex-flow: column
+  justify-content: space-between
+  height: 100%
+  align-items: center
+  margin: 0 1em
+  .bcContent
+    // height: 77%
+  .bcFooter
+    background-color: #fff
+    height: 23%
+    width: 100%
+    text-align: center
+    border-radius: 0 0 85px 85px
+.carousel-item
+  
+.carousel-dots-active
+  transform: scale(2)
+
+.carousel-dots li button:before
+  color: #fff !important
+  font-size: 50px !important
