@@ -14,6 +14,6 @@ function About() {
         <span>Digital Muda Kreatif</span> merupakan perusahaan yang bergerak dibidang <span>Teknologi Informasi</span>, <span>Digital Marketing</span> dan <span>Property</span>
       </p>
     </div>
-  );
+  )
 }
-export default About;
+export default About

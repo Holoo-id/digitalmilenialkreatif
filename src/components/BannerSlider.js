@@ -1,12 +1,11 @@
 // import React, { useState, useEffect } from 'react'
 import Slider from 'infinite-react-carousel'
-import bgImage2 from '../styles/images/bg-2.jpg'
 
 function BannerSlider() {
   const settings =  {
     adaptiveHeight: true,
     arrowsBlock: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     centerMode: true,
     dots: true,
@@ -15,7 +14,6 @@ function BannerSlider() {
 
   return(
     <div className="bannerSlider">
-      <figure className="theBackground"><img src={bgImage2}/></figure>
       <Slider { ...settings }>
         <div>
           <div className="bannerCard">
@@ -55,6 +53,6 @@ function BannerSlider() {
         </div>
       </Slider>
     </div>
-  );
+  )
 }
-export default BannerSlider;
+export default BannerSlider
