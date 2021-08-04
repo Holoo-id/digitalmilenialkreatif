@@ -1,0 +1,50 @@
+.servicesWrap
+  color: #fff
+  margin: 0 4%
+  display: grid
+  grid-template-columns: 50% 50%
+  position: relative
+  .lampuHias
+    position: absolute
+    // left: 50%
+    margin: -1em 45% 0
+  .serviceV1, .serviceV2
+    position: relative
+    display: flex
+    flex-flow: column
+    .serviceCard
+      width: 453px
+      height: 685px
+      background-color: #fff
+      border-radius: 226px 226px 0 0
+    .serviceTitle
+      text-transform: uppercase
+      font-weight: 900
+      font-size: 35px
+      line-height: 30px
+      word-wrap: break-word
+      width: min-content
+      margin: 26px 0
+    .serviceDescription
+      word-wrap: break-word
+      text-align: left
+      text-indent: 2.5em
+      font-weight: 700
+      font-size: 30px
+      max-width: 453px
+  .serviceV1
+    .serviceCard, .serviceTitle, .serviceDescription
+      align-self: flex-start
+  .serviceV2
+    .serviceCard, .serviceTitle, .serviceDescription
+      align-self: flex-end
+.serviceImage
+  position: absolute
+  height: 290px
+  top: 460px
+.serviceImage.laptop
+  left: 200px
+.serviceImage.camera
+  right: 100px
+.serviceImage.property
+  left: 175px
