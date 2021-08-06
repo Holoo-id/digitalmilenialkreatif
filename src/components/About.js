@@ -1,6 +1,6 @@
 function About() {
   return(
-    <div className="aboutDMK">
+    <div className="aboutDMK" id="homeSection2">
       <div className="overlap">
         <h1 className="aboutTitle">digital muda kreatif.</h1>
         <ul className="theServices">

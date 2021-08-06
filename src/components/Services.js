@@ -4,7 +4,7 @@ import propertyImage from '../styles/images/property.png'
 import lampuHias from '../styles/images/lampu.png'
 function Services() {
   return(
-    <div className="servicesWrap">
+    <div className="servicesWrap" id="homeSection3">
       <img className="lampuHias" src={lampuHias}/>
       <div className="serviceV1">
         <div className="serviceCard"></div>

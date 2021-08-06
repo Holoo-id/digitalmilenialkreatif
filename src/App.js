@@ -1,23 +1,33 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/App.sass'
-import About from './components/About'
-import BannerSlider from './components/BannerSlider'
+import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Services from './components/Services';
-import bgImage2 from './styles/images/bg-2.jpg'
+import Portofolio from './components/Portofolio';
+import UnderConstruction from './components/UnderConstruction';
 import theLogo from './logo.svg'
 
 function App() {
-  return (
-    <div className="App">
-      <figure className="theBackground">
-        <img src={bgImage2}/>
-      </figure>
-      <Navbar logo={theLogo}/>
-      <BannerSlider />
-      <About />
-      <Services />
-    </div>
-  );
+  const constStatus = true
+  if (constStatus) {
+    return(
+      <div className="App">
+        <UnderConstruction />
+      </div>
+    )
+  } else {
+    return (
+      <Router>
+        <div className="App">
+          <Navbar logo={theLogo}/>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/#homeSection2" component={Home} />
+              <Route path="/portofolio" component={Portofolio} />
+            </Switch>
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App;

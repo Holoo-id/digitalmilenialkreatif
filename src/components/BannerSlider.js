@@ -13,7 +13,7 @@ function BannerSlider() {
   }
 
   return(
-    <div className="bannerSlider">
+    <div className="bannerSlider" id="homeSection1">
       <Slider { ...settings }>
         <div>
           <div className="bannerCard">
