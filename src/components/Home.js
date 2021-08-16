@@ -6,7 +6,7 @@ function Home() {
   return(
     <div className="homePage">
       <figure className="theBackground">
-        <img src={bgImage2}/>
+        <img src={bgImage2} alt="thebackground"/>
       </figure>
       <BannerSlider />
       <About />

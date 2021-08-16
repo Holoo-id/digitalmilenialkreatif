@@ -6,8 +6,8 @@
   position: relative
   .lampuHias
     position: absolute
-    // left: 50%
     margin: -1em 45% 0
+    max-height: 100%
   .serviceV1, .serviceV2
     position: relative
     display: flex
@@ -17,6 +17,14 @@
       height: 685px
       background-color: #fff
       border-radius: 226px 226px 0 0
+      display: flex
+      a.serviceCardButton
+        // height: 34px
+        background-color: $mauve
+        padding: .75em 2em
+        border-radius: 34px
+        color: white
+        text-decoration: none
     .serviceTitle
       text-transform: uppercase
       font-weight: 900
@@ -35,9 +43,15 @@
   .serviceV1
     .serviceCard, .serviceTitle, .serviceDescription
       align-self: flex-start
+    .serviceCard
+      a.serviceCardButton
+        margin: auto 1em 1em
   .serviceV2
     .serviceCard, .serviceTitle, .serviceDescription
       align-self: flex-end
+    .serviceCard 
+      a.serviceCardButton
+        margin: auto 1em 1em auto
 .serviceImage
   position: absolute
   height: 290px
@@ -45,6 +59,7 @@
 .serviceImage.laptop
   left: 200px
 .serviceImage.camera
-  right: 100px
+  right: 300px
+  left: auto
 .serviceImage.property
   left: 175px

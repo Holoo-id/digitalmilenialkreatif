@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/App.sass'
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Portofolio from './components/Portofolio';
@@ -7,7 +8,7 @@ import UnderConstruction from './components/UnderConstruction';
 import theLogo from './logo.svg'
 
 function App() {
-  const constStatus = true
+  const constStatus = false
   if (constStatus) {
     return(
       <div className="App">
@@ -19,12 +20,13 @@ function App() {
       <Router>
         <div className="App">
           <Navbar logo={theLogo}/>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/#homeSection2" component={Home} />
-              <Route path="/portofolio" component={Portofolio} />
-            </Switch>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/#homeSection2" component={Home} />
+            <Route path="/portofolio" component={Portofolio} />
+          </Switch>
         </div>
+        <Footer />
       </Router>
     )
   }
