@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Portofolio from './components/Portofolio';
 import UnderConstruction from './components/UnderConstruction';
+import ToggleSidebar from './components/ToggleSidebar';
 import theLogo from './logo.svg'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           </Switch>
         </div>
         <Footer />
+        <ToggleSidebar />
       </Router>
     )
   }

@@ -1,0 +1,38 @@
+.toggleSidebar
+  position: fixed
+  width: 18px
+  height: 100vh
+  background-color: $crayola
+  top: 0
+  right: 0
+  margin: 0 0 0 auto
+  z-index: 1
+  &.open
+    width: 100%
+  .sideMenuWrap
+    width: fit-content
+    margin: 15% auto
+    ul.sideMenu
+      list-style: none
+      font-size: 2em
+      text-align: center
+      li
+        padding: 1em 0
+        a
+          color: white
+          text-decoration: none
+          &:hover, &:active
+            text-decoration: underline
+
+.toggleTrigger
+  position: fixed
+  background-color: $crayola
+  border-radius: 50%
+  height: 120px
+  width: 120px
+  border: transparent
+  right: 0
+  margin: -4em -3em 0 auto
+  padding-right: 2em
+  padding-top: 4em
+  cursor: pointer
