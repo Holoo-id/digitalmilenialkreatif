@@ -1,0 +1,57 @@
+.contactPage
+  width: 65%
+  .infoWrap
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(2, 50%)
+    gap: 2.5em
+    justify-content: center
+    .contactInfo
+      display: flex
+      flex-flow: column
+      align-items: center
+    .info
+      margin: 22px 0
+      width: 80%
+      .head
+        font-size: 22px
+        text-transform: capitalize
+        margin-bottom: 4px
+      .infoContactWrap
+        display: flex
+        flex-flow: row
+        justify-content: space-between
+        margin: 1em 2em
+        a.infoContact
+          gap: 1em
+          display: flex
+          flex-flow: column
+          align-items: center
+          width: 40%
+          color: black
+          p
+            width: 100%
+    .customMaps
+      width: 100%
+      iframe
+        width: 100%
+        height: 400px
+        frameborder: 0
+        scrolling: no
+        margin: 0
+        borderRadius: 15px
+    .contactForm
+      width: 100%
+      .formGroup
+        display: flex
+        flex-flow: column
+        margin: 22px 0
+        label
+          font-weight: 700
+          margin-bottom: 1em
+        input.formInput, textarea.formInput
+          border: 2px solid black
+          border-radius: 30px
+          padding: .25em .75em
+          resize: vertical
+          font-size: 1.5em

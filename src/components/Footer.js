@@ -40,7 +40,7 @@ function Footer() {
         <div className="footerTopColumn">
           <div className="footerInfo">
             <h4 className="footerInfoHeader">for bussiness inquiries</h4>
-            <p className="footerInfoText">info@dmk.com</p>
+            <p className="footerInfoText">info@digitalmilenialkreatif.com</p>
             <p className="footerInfoText">+62 xxx-xxxx-xxxx</p>
             <div className="footerContactWrap">
               <a href="" className="footerContact">

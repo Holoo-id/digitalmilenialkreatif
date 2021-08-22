@@ -8,6 +8,7 @@ import Portofolio from './components/Portofolio';
 import UnderConstruction from './components/UnderConstruction';
 import ToggleSidebar from './components/ToggleSidebar';
 import theLogo from './logo.svg'
+import Contact from './components/page/Contact';
 
 function App() {
   const constStatus = false
@@ -23,7 +24,7 @@ function App() {
         <div className="App">
           {/* <Navbar logo={theLogo}/> */}
           <Switch>
-            <Route exact path="/" component={About} />
+            <Route exact path="/" component={Contact} />
             <Route exact path="/about" component={About} />
             <Route path="/portofolio" component={Portofolio} />
           </Switch>
