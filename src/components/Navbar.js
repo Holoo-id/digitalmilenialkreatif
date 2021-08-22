@@ -9,7 +9,7 @@ function Navbar(props) {
       </Link>
       <ul className="navMenu">
         <Link to="/portofolio" className="navMenuItem">portofolio</Link>
-        <Link to="/#homeSection2" className="navMenuItem">about</Link>
+        <Link to="/about" className="navMenuItem">about</Link>
         <a href="" className="navMenuItem">contact</a>
       </ul>
     </nav>

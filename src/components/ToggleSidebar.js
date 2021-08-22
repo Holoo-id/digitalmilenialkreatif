@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Sort } from '@material-ui/icons'
 function ToggleSidebar() {
-  const [activeMenu, setActiveMenu] = useState(true)
+  const [activeMenu, setActiveMenu] = useState(false)
   const changeActive = () => {
     setActiveMenu(!activeMenu)
   }

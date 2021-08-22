@@ -32,7 +32,7 @@ function Footer() {
             <div className="footerContactWrap">
               <a href="" className="footerContactAlt">
                 <Room fontSize={'large'}/>
-                <p className="footerContactText">google maps</p> 
+                <p className="button white">google maps</p> 
               </a>
             </div>
           </div>
@@ -45,11 +45,11 @@ function Footer() {
             <div className="footerContactWrap">
               <a href="" className="footerContact">
                 <AlternateEmail fontSize={'large'} />
-                <p className="footerContactText">email</p> 
+                <p className="button white">email</p> 
               </a>
               <a href="" className="footerContact">
                 <WhatsApp fontSize={'large'} />
-                <p className="footerContactText">whatsapp</p>
+                <p className="button white">whatsapp</p>
               </a>
             </div>
           </div>

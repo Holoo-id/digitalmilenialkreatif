@@ -1,7 +1,7 @@
-import underConstructionImage from '../styles/images/under_construction.jpg'
+
 function UnderConstruction() {
   return(
-    <img src={underConstructionImage} className="underConstruction" />
+    <img src="./images/under_construction.jpg" className="underConstruction" />
   )
 }
 export default UnderConstruction
