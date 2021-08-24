@@ -1,0 +1,26 @@
+.workPage
+  .galleryFilter
+    margin: 4em 0
+    width: 75%
+    display: flex
+    gap: 1em
+    flex-flow: wrap
+    justify-content: center
+    text-align: center
+    button
+      font-size: 1em
+      font-weight: 700
+      padding: .5em 1em
+      border: none
+      background-color: transparent
+      &:focus, &:hover, &:active
+        background-color: #6996FF4D
+        border-radius: 37px
+  .workGallery
+    display: grid
+    grid-template-columns: repeat(3, 425px)
+    grid-gap: 50px
+    .workWrap .workThumbnail img
+      height: 285px
+      width: 100%
+      object-fit: cover
