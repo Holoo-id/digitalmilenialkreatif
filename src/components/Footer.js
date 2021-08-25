@@ -11,16 +11,12 @@ function Footer() {
             <li className="footerMenuItem">Contact</li>
             <li className="footerMenuItem">About</li>
           </ul>
-        </div>
-        <div className="footerTopColumn">
           <ul className="footerMenu">
             <li className="footerMenuItem">Teknologi Informasi</li>
             <li className="footerMenuItem">Digital Marketing</li>
             <li className="footerMenuItem">Property</li>
             <li className="footerMenuItem">DMKademy</li>
           </ul>
-        </div>
-        <div className="footerTopColumn">
           <ul className="footerMenu">
             <li className="footerMenuItemTitle">Portofolio</li>
           </ul>
@@ -36,8 +32,6 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="footerTopColumn">
           <div className="footerInfo">
             <h4 className="footerInfoHeader">for bussiness inquiries</h4>
             <p className="footerInfoText">info@digitalmilenialkreatif.com</p>
