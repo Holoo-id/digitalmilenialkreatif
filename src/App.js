@@ -20,11 +20,12 @@ function App() {
       <Router>
         <div className="App">
           {/* <Navbar logo={theLogo}/> */}
-          {/* <Switch>
-            <Route exact path="/" component={Work} />
+          <Switch>
+            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/work" component={Work} />
             <Route exact path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-          </Switch> */}
+          </Switch>
           <Footer />
           <ToggleSidebar />
         </div>

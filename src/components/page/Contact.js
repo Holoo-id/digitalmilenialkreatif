@@ -15,8 +15,8 @@ function Contact() {
           </div>
           <div className="info">
             <h4 className="head">for bussiness inquiries</h4>
-            <p>info@digitalmilenialkreatif.com</p>
-            <p>+62 xxx-xxxx-xxxx</p>
+            <p className="infoText">info@digitalmilenialkreatif.com</p>
+            <p className="infoText">+62 xxx-xxxx-xxxx</p>
             <div className="infoContactWrap">
               <a href="" className="infoContact">
                 <AlternateEmail fontSize={'large'} />
