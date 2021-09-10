@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { AlternateEmail, Facebook, Instagram, LinkedIn, Pinterest, Room, Twitter, WhatsApp, YouTube } from '@material-ui/icons'
 
 function Footer() {
@@ -6,10 +7,18 @@ function Footer() {
       <div className="footerTop">
         <div className="footerTopColumn">
           <ul className="footerMenu">
-            <li className="footerMenuItem">Home</li>
-            <li className="footerMenuItem">Work</li>
-            <li className="footerMenuItem">Contact</li>
-            <li className="footerMenuItem">About</li>
+            <li className="footerMenuItem">
+              <Link to="/" className="footerMenuItem">Home</Link>
+            </li>
+            <li className="footerMenuItem">
+              <Link to="/work" className="footerMenuItem">Work</Link>
+            </li>
+            <li className="footerMenuItem">
+              <Link to="/contact" className="footerMenuItem">Contact</Link>
+            </li>
+            <li className="footerMenuItem">
+              <Link to="/about" className="footerMenuItem">About</Link>
+            </li>
           </ul>
           <ul className="footerMenu">
             <li className="footerMenuItem">Teknologi Informasi</li>

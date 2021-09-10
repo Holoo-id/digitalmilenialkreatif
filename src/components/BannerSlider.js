@@ -1,20 +1,20 @@
 // import React, { useState, useEffect } from 'react'
-import Slider from 'infinite-react-carousel'
+
 
 function BannerSlider() {
-  const settings =  {
-    adaptiveHeight: true,
-    arrowsBlock: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    dots: true,
-    slidesToShow: 3.5
-  }
+  // const settings =  {
+  //   adaptiveHeight: true,
+  //   arrowsBlock: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   centerMode: true,
+  //   dots: true,
+  //   slidesToShow: 3.5
+  // }
 
   return(
     <div className="bannerSlider" id="homeSection1">
-      <Slider { ...settings }>
+      {/* <Slider { ...settings }>
         <div>
           <div className="bannerCard">
             <div className="bcContent"></div>
@@ -51,7 +51,7 @@ function BannerSlider() {
             <div className="bcFooter"></div>
           </div>
         </div>
-      </Slider>
+      </Slider> */}
     </div>
   )
 }

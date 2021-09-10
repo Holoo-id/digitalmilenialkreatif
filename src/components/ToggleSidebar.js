@@ -17,7 +17,7 @@ function ToggleSidebar() {
       </button>
       <div className="sideMenuWrap">
         <ul className="sideMenu">
-          <li><a href="">Teknologi Informasi</a></li>
+          <li><a href="/tech">Teknologi Informasi</a></li>
           <li><a href="">Digital Marketing</a></li>
           <li><a href="">DMKademy</a></li>
           <li><a href="">Property</a></li>

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/App.sass'
 import About from './components/page/About';
+import DivisionTemplate from './components/page/DivisionTemplate';
 import Footer from './components/Footer';
 import UnderConstruction from './components/UnderConstruction';
 import ToggleSidebar from './components/ToggleSidebar';
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/work" component={Work} />
             <Route exact path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/tech" component={DivisionTemplate} />
           </Switch>
           <Footer />
           <ToggleSidebar />
