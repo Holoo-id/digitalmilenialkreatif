@@ -1,14 +1,7 @@
-// import Slider from 'infinite-react-carousel'
+import Carousel, { autoplayPlugin, Dots, slidesToShowPlugin } from '@brainhubeu/react-carousel'
+import '@brainhubeu/react-carousel/lib/style.css'
+
 function DivisionTemplate() {
-  // const settings =  {
-  //   adaptiveHeight: true,
-  //   arrowsBlock: false,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   centerMode: true,
-  //   dots: true,
-  //   slidesToShow: 3
-  // }
 
   return(
     <div className="divTemp">
@@ -20,38 +13,90 @@ function DivisionTemplate() {
             <p className="headDesc">Digital Marketing merupakan bagin divisi dari blabla blabla yang bergerak dibidang Teknologi Informasi, Digital Marketing dan Property.</p>
           </div>
           <div className="headSlide">
-            {/* <Slider { ...settings }>
-              <div>
-                <div className="slideCard">
-                  <img className="cardImg" src="/images/laptop.png" />
-                  <div className="cardTitle">service A</div>
-                </div>
+            <Carousel
+              plugins={[
+                'centered',
+                'fastSwipe',
+                'infinite', 
+                {
+                  resolve: autoplayPlugin,
+                  options: {
+                    interval: 2000,
+                  }
+                }, 
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                   numberOfSlides: 4
+                  }
+                }
+              ]} 
+              animationSpeed={1000} 
+              breakpoints={{
+                640: {
+                  plugins: [
+                    'centered',
+                    'clickToChange',
+                    'fastSwipe',
+                    'infinite', 
+                    {
+                      resolve: slidesToShowPlugin,
+                      options: {
+                       numberOfSlides: 1
+                      }
+                    }
+                  ]
+                },
+                1024: {
+                  plugins: [
+                    'centered',
+                    'clickToChange',
+                    'fastSwipe',
+                    'infinite', 
+                    {
+                      resolve: slidesToShowPlugin,
+                      options: {
+                       numberOfSlides: 2
+                      }
+                    }
+                  ]
+                },
+                1280: {
+                  plugins: [
+                    'centered',
+                    'fastSwipe',
+                    'infinite', 
+                    {
+                      resolve: slidesToShowPlugin,
+                      options: {
+                       numberOfSlides: 3
+                      }
+                    }
+                  ]
+                }
+              }}
+            >
+              <div className="slideCard">
+                <img className="cardImg" src="/images/laptop.png" />
+                <div className="cardTitle">service A</div>
               </div>
-              <div>
-                <div className="slideCard">
-                  <img className="cardImg" src="/images/laptop.png" />
-                  <div className="cardTitle">service A</div>
-                </div>
+              <div className="slideCard">
+                <img className="cardImg" src="/images/laptop.png" />
+                <div className="cardTitle">service B</div>
               </div>
-              <div>
-                <div className="slideCard">
-                  <img className="cardImg" src="/images/laptop.png" />
-                  <div className="cardTitle">service A</div>
-                </div>
+              <div className="slideCard">
+                <img className="cardImg" src="/images/laptop.png" />
+                <div className="cardTitle">service C</div>
               </div>
-              <div>
-                <div className="slideCard">
-                  <img className="cardImg" src="/images/laptop.png" />
-                  <div className="cardTitle">service A</div>
-                </div>
+              <div className="slideCard">
+                <img className="cardImg" src="/images/laptop.png" />
+                <div className="cardTitle">service D</div>
               </div>
-              <div>
-                <div className="slideCard">
-                  <img className="cardImg" src="/images/laptop.png" />
-                  <div className="cardTitle">service A</div>
-                </div>
+              <div className="slideCard">
+                <img className="cardImg" src="/images/laptop.png" />
+                <div className="cardTitle">service E</div>
               </div>
-            </Slider> */}
+            </Carousel>
           </div>
         </div>
       </div>
