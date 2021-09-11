@@ -1,4 +1,4 @@
-import { AlternateEmail, Facebook, Instagram, LinkedIn, Pinterest, Room, Twitter, WhatsApp, YouTube } from '@material-ui/icons'
+import { AlternateEmail, WhatsApp } from '@material-ui/icons'
 function Contact() {
   return(
     <div className="contactPage">

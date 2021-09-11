@@ -30,22 +30,6 @@
         padding: 0 0 3.875rem
         margin: 0 -5%
         width: 105%
-        .slideCard
-          background-color: $ultramarine-blue
-          border-radius: 42px
-          height: 315px
-          width: 315px
-          position: relative
-          margin: 0 -52px 0 -38px
-          img.cardImg
-            max-width: 125%
-            margin: -10% -12.5% 0
-          .cardTitle
-            margin: auto 0 16px
-            text-align: center
-            font-size: 30px
-            color: white
-            position: relative
   .servSecWrap
     display: flex
     justify-content: center
@@ -91,4 +75,48 @@
         max-width: 50%
         height: 400px
         border-radius: 42px
-  .workSec
+  .workSecWrap .workTitle
+    color: white
+    font-size: 75px
+    line-height: 49px
+    padding: 19px 165px
+    background-color: $ultramarine-blue
+    border-radius: 42px
+    width: max-content
+    margin: 76px auto
+
+.slideCard, .slideCard2
+  background-color: $ultramarine-blue
+  border-radius: 42px
+  width: 315px
+  position: relative
+  margin: 0 -52px 0 -38px
+.slideCard
+  height: 315px
+  .cardTitle
+    margin: auto 0 16px
+    text-align: center
+    font-size: 30px
+    color: white
+    position: relative
+  img.cardImg
+    max-width: 125%
+    margin: -10% -12.5% 0
+.slideCard2
+  height: 1065px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  img.cardImg
+    padding: 2.5rem 0
+    max-width: 100%
+  .cardContent
+    color: white
+    height: 65%
+    .cardTitle
+      font-size: 75px
+      margin: 0 -15%
+    .cardText
+      font-size: 24px
+      padding: 2rem 1rem

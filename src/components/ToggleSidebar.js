@@ -7,7 +7,7 @@ function ToggleSidebar() {
   }
 
   return(
-    <div className={`toggleSidebar${activeMenu == true ? ' open' : ''}`}>
+    <div className={`toggleSidebar${activeMenu === true ? ' open' : ''}`}>
       <button className="toggleTrigger" onClick={ changeActive }>
         <Sort style={{
           transform: 'rotateY(180deg)',
