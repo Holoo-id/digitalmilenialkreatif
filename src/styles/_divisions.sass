@@ -2,13 +2,32 @@
   background-color: $cornflower-blue
   padding: 2.5rem 0
   .headSec
+    display: flex
+    flex-direction: column
+    .headImage
+      margin: 0 auto -5%
     .headCard
       border-radius: 75px
-      background-color: white
+      background-color: rgba(255, 255, 255, .89)
       margin: 0 52px 0 38px
       display: flex
       flex-direction: column
       align-items: center
+      position: relative
+      .thatCircle
+        position: absolute
+        right: 75px
+        left: auto
+        top: -10%
+        width: 205px
+        height: 205px
+        border-radius: 50%
+        background-color: $mauve
+      .cardLogo
+        position: absolute
+        width: 70px
+        top: 2rem
+        left: 75px
       .headInfo
         margin: 0 auto
         color: $ultramarine-blue
@@ -23,8 +42,18 @@
           font-size: 72px
           line-height: 56px
           width: min-content
+          margin: 130px 0
+          position: relative
+          &::before
+            content: url('/img/two_clink.svg')
+            position: absolute
+            top: -4rem
+            left: -7.5rem
+          &::after
+            content: '.'
+            color: $mauve
         .headDesc
-          padding: 67px 0
+          padding: 0 0 67px
           font-size: 24px
       .headSlide
         padding: 0 0 3.875rem
@@ -79,11 +108,21 @@
     color: white
     font-size: 75px
     line-height: 49px
-    padding: 19px 165px
+    padding: 20px 245px 20px 165px
     background-color: $ultramarine-blue
     border-radius: 42px
     width: max-content
     margin: 76px auto
+    position: relative
+    .thoseCircle
+      position: absolute
+      right: .25rem
+      top: .25rem
+      left: auto
+      width: 80px
+      height: 80px
+      background-color: $mauve
+      border-radius: 50%
 
 .slideCard, .slideCard2
   background-color: $ultramarine-blue
@@ -93,6 +132,17 @@
   margin: 0 -52px 0 -38px
 .slideCard
   height: 315px
+  position: relative
+  .circle
+    width: 1.25rem
+    height: 1.25rem
+    background-color: $mauve
+    border-radius: 50%
+    border: $ultramarine-blue 3px solid
+    position: absolute
+    top: 0
+    right: 0
+    left: auto
   .cardTitle
     margin: auto 0 16px
     text-align: center

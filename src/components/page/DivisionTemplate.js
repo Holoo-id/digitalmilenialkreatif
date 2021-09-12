@@ -6,7 +6,10 @@ function DivisionTemplate() {
   return(
     <div className="divTemp">
       <div className="headSec">
+        <img src="/images/tech.png" alt="Teknologi Informasi" className="headImage"/>
         <div className="headCard">
+          <div className="thatCircle"></div>
+          <img src="/images/dmk_hitam.png" alt="Logo Digital Milenial Kreatif" className="cardLogo" />
           <div className="headInfo">
             <h3 className="headTitle">TEKNOLOGI INFORMASI</h3>
             <p className="headDesc">Digital Marketing merupakan bagin divisi dari blabla blabla yang bergerak dibidang Teknologi Informasi, Digital Marketing dan Property.</p>
@@ -76,22 +79,27 @@ function DivisionTemplate() {
               }}
             >
               <div className="slideCard">
+                <div className="circle"></div>
                 <img className="cardImg" src="/images/laptop.png" />
                 <div className="cardTitle">service A</div>
               </div>
               <div className="slideCard">
+                <div className="circle"></div>
                 <img className="cardImg" src="/images/laptop.png" />
                 <div className="cardTitle">service B</div>
               </div>
               <div className="slideCard">
+                <div className="circle"></div>
                 <img className="cardImg" src="/images/laptop.png" />
                 <div className="cardTitle">service C</div>
               </div>
               <div className="slideCard">
+                <div className="circle"></div>
                 <img className="cardImg" src="/images/laptop.png" />
                 <div className="cardTitle">service D</div>
               </div>
               <div className="slideCard">
+                <div className="circle"></div>
                 <img className="cardImg" src="/images/laptop.png" />
                 <div className="cardTitle">service E</div>
               </div>
@@ -112,7 +120,10 @@ function DivisionTemplate() {
         </div>
       </div>
       <div className="workSecWrap">
-        <div className="workTitle">work</div>
+        <div className="workTitle">
+          <div className="thoseCircle"></div>
+          work
+        </div>
         <div className="workSlide">
           <Carousel
             plugins={[
@@ -213,6 +224,7 @@ function DivisionTemplate() {
               </div>
             </div>
           </Carousel>
+          {/* <Dots value={this.state.value} onChange={this.onchange} number={this.state.slides.length} /> */}
         </div>
       </div>
     </div>
