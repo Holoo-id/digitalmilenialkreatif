@@ -1,26 +1,44 @@
 .bannerCard
+  margin: 10rem 1rem 7.5rem
   background-color: rgba(255, 255, 255, .5)
-  border-radius: 85px
+  border-radius: 60px
+  height: 475px
   aspect-ratio: 1
-  display: flex
-  flex-flow: column
-  justify-content: space-between
-  height: 100%
-  align-items: center
-  margin: 35% 2em 0
-  .bcContent
-    // height: 77%
-  .bcFooter
-    background-color: #fff
-    height: 23%
+  position: relative
+  color: $cornflower-blue
+  @media screen and (max-width: 480px)
+    transform: scale(.65)
+  img
+    height: 90%
+    width: 150%
+    margin: -25%
+    object-fit: contain
+    position: relative
+    z-index: 1
+  .bannerInfo
+    z-index: 0
+    background-color: white
+    border-radius: 0 0 60px 60px
+    position: absolute
     width: 100%
+    bottom: 0
+    top: auto
+    height: 35%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
     text-align: center
-    border-radius: 0 0 85px 85px
-.carousel-item
-  
-.carousel-dots-active
-  transform: scale(2)
-
-.carousel-dots li button:before
-  color: #fff !important
-  font-size: 50px !important
+    .bannerTitle
+      font-size: 45px
+      line-height: .75
+      word-wrap: break-word
+      width: min-content
+    .bannerText
+      font-size: 1rem
+      list-style: none
+      width: 80%
+      span img
+        margin: 0 .125rem 0 .25rem
+        width: 10px
+        height: 10px

@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import CategoryList from './CategoryList'
+import Footer from '../../Footer'
+import ToggleSidebar from '../../ToggleSidebar'
 import WorkGallery from './WorkGallery'
 import WorkList from './WorkList'
 function Work() {
@@ -18,12 +20,16 @@ function Work() {
   }
 
   return(
-    <div className="workPage">
-      <img src="./images/custom_hr.png" className="customHr"/>
-      <h2 className="pageTitle">work</h2>
-      <CategoryList categories={ categoryItems } filterMenu={ filterMenu } />
-      <WorkGallery works={ works } />
-      {/* <WorkGallery works={ works.filter((work) => work.category === 'programming') } /> */}
+    <div>
+      <div className="workPage">
+        <img src="./images/custom_hr.png" className="customHr"/>
+        <h2 className="pageTitle">work</h2>
+        <CategoryList categories={ categoryItems } filterMenu={ filterMenu } />
+        <WorkGallery works={ works } />
+        {/* <WorkGallery works={ works.filter((work) => work.category === 'programming') } /> */}
+      </div>
+      <Footer />
+      <ToggleSidebar />
     </div>
   )
 }

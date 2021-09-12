@@ -1,5 +1,7 @@
 import Carousel, { autoplayPlugin, Dots, slidesToShowPlugin } from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
+import Footer from '../Footer'
+import ToggleSidebar from '../ToggleSidebar'
 
 function DivisionTemplate() {
 
@@ -227,6 +229,8 @@ function DivisionTemplate() {
           {/* <Dots value={this.state.value} onChange={this.onchange} number={this.state.slides.length} /> */}
         </div>
       </div>
+      <Footer />
+      <ToggleSidebar />
     </div>
   )
 }

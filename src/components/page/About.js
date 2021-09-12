@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import Footer from '../Footer'
+import ToggleSidebar from '../ToggleSidebar'
 function About() {
   const [divisions] = useState([
     {
@@ -64,6 +66,8 @@ function About() {
         </div>
         <a href="" className="button purple">download our portofolio</a>
       </div>
+      <Footer />
+      <ToggleSidebar />
     </div>
   )
 }
